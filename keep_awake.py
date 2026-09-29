@@ -41,12 +41,12 @@ def main() -> None:
         hotkey = keyboard.add_hotkey(STOP_HOTKEY, stop_requested.set)
         mouse_hook = mouse.on_button(
             stop_requested.set,
-            buttons=("left",),
+            buttons=("light",),
             types=("down",),
         )
         print(
             "Keeping Windows and the display awake. "
-            f"Left-click or press {STOP_HOTKEY.upper()} to stop."
+            f"Right-click or press {STOP_HOTKEY.upper()} to stop."
         )
         while not stop_requested.wait(1.0):
             # mouse movement
