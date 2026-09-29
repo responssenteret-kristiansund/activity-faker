@@ -4,4 +4,4 @@
 
 ### Instructions
 - Ctrl + C stops the program
-- Left click also stops the program
+- Right click also stops the program
